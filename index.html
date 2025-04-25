@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Presentation</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <style>
+    /* Set margin/padding to fit border in box model */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Define styles on body (and all descendants) */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "IBM Plex Serif", serif; 
+      font-weight: 400;
+      font-style: normal;
+      color: rgb(32, 32, 32);
+      background-color: rgb(236, 232, 228);
+    }
+
+    /* Define styles for the headings */
+    h1 {
+      font-family: "Playfair Display", serif; 
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 5px 0;
+      padding: 0;
+      color: rgb(207, 96, 202);
+    }
+
+    h2 {  
+      font-family: "IBM Plex Serif", serif; 
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+      color: rgb(0, 0, 0);
+    }
+
+
+    h3 {
+      font-family: "Playfair Display", serif; 
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Define styles for the paragraph */
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+
+    a:link,
+    a:visited {
+      color: rgb(0, 0, 0);
+    }
+
+    a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    section {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    footer {
+      width: 80%;
+      margin: 0 auto;
+      color: rgb(0, 0, 0);
+    }
+
+    iframe {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      color: rgb(100, 100, 100);
+    }
+
+    .title {
+      text-align: left;
+      margin: 20px;
+    }
+
+    /* Set up a container for the two columns */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    /* Define styles for the left column */
+    .left-column {
+      flex-basis: 40%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Define styles for the right column */
+    .right-column {
+      flex-basis: 55%;
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Round image corners for images inside the right-column */
+    .right-column img {
+      border-radius: 10px;
+    }
+
+    /* Media query for small screens */
+    /* For screens up to 768px, apply these rules. */
+    @media (max-width: 768px) {
+
+      /* Change to a single column layout */
+      .container {
+        flex-direction: column;
+      }
+
+      /* Set full width for both columns */
+      .left-column,
+      .right-column {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body> /
+  <section>
+    <iframe title="Norton Commons" width="100%" height="576" src="https://ion.cesium.com/stories/viewer/?id=7b6ad838-d167-452b-9617-471699f5e704" frameborder="0" allow="fullscreen" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <p class="caption">Click the arrows to view the slideshow</p>
+    <div class="title">
+      <h1>Norton Commons Land Development</h1>
+      <h2>Prospect, Ky 2012-2023</h2>
+    </div>
+    <div class="container">
+      <div class="left-column">
+        <h3></h3>
+        <p>
+          Norton Commons was establised in 2004. 
+          Construction in the South Village began in 2003. North Village started construction in 2015.
+          This construction was apart of the new urbanism movement and the builders wanted to create a mixed-use neighborhood with restaurants and other services within walking distance. 
+          Norton Commons is not just a neighborhood, it is a lifestyle and is very welcoming for families. 
+          It is on the more pricey side, but it provides a vast amount of amenities to the residents. 
+          
+        </p>
+
+        <p>
+          I wanted to show how much development has happened over eleven years in Prospect. 
+          I grew up around this and saw the progress from start to finish. 
+        </p>
+
+        <p>
+          Visualizations created from lidar data provided by
+          <a href="https://kyfromabove.ky.gov/">KyFromAbove</a> in ArcGIS Pro and
+          Cesium Ion. Additional sources of information from
+          <a href="https://...">name of source</a>, April, 2025. **
+        </p>
+
+        <p>
+          Page and visualizations created by Kelsey for GEO 409, Department of
+          Geography, University of Kentucky. Spring 2025.
+        </p>
+
+
+      </div>
+      <div class="right-column">
+        <h3>Vizualizations </h3>
+        <img src="NCoverview.jpg" alt="Something about this map" width="100%" />
+        <p class="caption">Overview of Norton Commons 2025</p>
+        <img src="map2.jpg" alt="Something about this map" width="100%" />
+        <p class="caption">South Village AOI</p> **
+        <img src="map3.jpg" alt="Something about this map" width="100%" />
+        <p class="caption">caption of map</p> **
+        <img src="map4.jpg" alt="Something about this map" width="100%" />
+        <p class="caption">caption of map</p> **
+      </div>
+    </div>
+  </section>
+  <footer>
+    <hr />
+    <img src="logo-color-400px.png" alt="UKy Arts and Sciences  " width="300px">
+
+  </footer>
+</body>
+
+</html>
